@@ -2,17 +2,21 @@
 # -*- coding: utf-8 -*-
 
 '''
+example took from https://towardsdatascience.com/simple-machine-learning-model-in-python-in-5-lines-of-code-fe03d72e78c6
+'''
+
+'''
 prepare the data
 '''
 from random import randint
 
-TRAIN_SET_LIMIT = 1000
-TRAIN_SET_COUNT = 100
+TRAIN_SET_LIMIT = 10000
+TRAIN_SET_COUNT = 4
 
 TRAIN_INPUT = list()
 TRAIN_OUTPUT = list()
 
-for i in range(TRAIN_SET_LIMIT):
+for i in range(TRAIN_SET_COUNT):
     a = randint(0, TRAIN_SET_LIMIT)
     b = randint(0, TRAIN_SET_LIMIT)
     c = randint(0, TRAIN_SET_LIMIT)
